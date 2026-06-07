@@ -1,0 +1,146 @@
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ffffff; /* Fundo estritamente branco */
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #4A5D4E; /* Linha detalhe em verde musgo */
+}
+
+header h1 {
+    color: #4A5D4E; /* Verde Musgo principal */
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+header .subtitle {
+    color: #6B7F6F; /* Verde musgo claro */
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/* Conteúdo Principal / Cards */
+main {
+    padding: 40px 0;
+}
+
+.topic-card {
+    display: flex;
+    flex-direction: column;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.topic-card:hover {
+    transform: translateY(-2px);
+}
+
+.topic-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.topic-content {
+    padding: 25px;
+}
+
+.topic-content h2 {
+    color: #37453A; /* Verde musgo escuro para títulos */
+    margin-bottom: 12px;
+    font-size: 1.6rem;
+}
+
+.topic-content .summary {
+    color: #555555;
+    margin-bottom: 15px;
+}
+
+/* Informações Ocultas (Efeito do Botão) */
+.extra-info {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed #4A5D4E;
+    color: #444444;
+    transition: all 0.3s ease-in-out;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Botões */
+.toggle-btn {
+    background-color: #4A5D4E; /* Botão Verde Musgo */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.2s;
+}
+
+.toggle-btn:hover {
+    background-color: #37453A; /* Tom mais escuro ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    color: #6B7F6F;
+    border-top: 1px solid #e0e0e0;
+    font-size: 0.9rem;
+}
+
+/* Responsividade para Telas Maiores (Computador) */
+@media (min-width: 768px) {
+    .topic-card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .topic-image {
+        flex: 1;
+        height: 100%;
+    }
+
+    .topic-image img {
+        height: 320px;
+    }
+
+    .topic-content {
+        flex: 1.5;
+        padding: 35px;
+    }
+}
