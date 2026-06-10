@@ -3,72 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agroforte: Futuro Sustentável</title>
+    <title>Bioenergia - Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
     <header>
-        <div class="container">
-            <h1>Bioenergia</h1>
-            <p class="subtitle">Agroforte: Futuro Sustentável</p>
+        <div class="interface">
+            <div class="logo">
+                <i class="fa-solid fa-leaf"></i> <span>Bioenergia</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">O que é?</a></li>
+                    <li><a href="#importancia">Importância</a></li>
+                    <li><a href="#utilizacao">Como Utilizar</a></li>
+                    <li><a href="#simulador">Simulador</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <main class="container">
-        
-        <section class="topic-card">
-            <div class="topic-image">
-                <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=800&q=80" alt="Biomassa e Energia">
+    <section id="inicio" class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1473448912268-2022ce9509d8?auto=format&fit=crop&w=1200&q=80');">
+        <div class="interface">
+            <div class="txt-hero">
+                <h1>Agroforte: O Futuro Sustentável na Bioenergia</h1>
+                <p>Descubra como a força do campo impulsiona a matriz energética do amanhã de forma limpa, renovável e consciente.</p>
+                <a href="#sobre" class="btn">Saiba Mais</a>
             </div>
-            <div class="topic-content">
-                <h2>O que é Bioenergia?</h2>
-                <p class="summary">A bioenergia é a energia obtida a partir da matéria orgânica, conhecida como biomassa. Ela representa uma das principais alternativas para a substituição de combustíveis fósseis.</p>
-                
-                <div class="extra-info hidden">
-                    <p>Essa energia pode ser gerada a partir de diversos recursos renováveis, como o bagaço da cana-de-açúcar, resíduos agrícolas, madeira e até resíduos urbanos. Além de reduzir a emissão de gases de efeito estufa, o uso da biomassa impulsiona a economia circular no campo.</p>
-                </div>
-                
-                <button class="toggle-btn">Saiba mais</button>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="topic-card">
-            <div class="topic-image">
-                <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=800&q=80" alt="Biocombustíveis no Campo">
-            </div>
-            <div class="topic-content">
-                <h2>Biocombustíveis e o Agro</h2>
-                <p class="summary">O setor do agronegócio desempenha um papel vital na produção de biocombustíveis, como o etanol e o biodiesel, liderando a transição energética.</p>
-                
-                <div class="extra-info hidden">
-                    <p>O etanol (produzido principalmente da cana-de-açúcar e do milho) e o biodiesel (extraído de óleos vegetais como a soja) são exemplos práticos de como a força do campo alimenta as cidades de forma limpa. O refino e o uso desses combustíveis emitem significativamente menos poluentes na atmosfera.</p>
+    <section id="sobre" class="sobre">
+        <div class="interface">
+            <div class="flex">
+                <div class="img-sobre">
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=600&q=80" alt="Plantação sustentável e energia renovável">
                 </div>
-                
-                <button class="toggle-btn">Saiba mais</button>
-            </div>
-        </section>
-
-        <section class="topic-card">
-            <div class="topic-image">
-                <img src="https://images.unsplash.com/photo-1532347922424-c652d9b7208e?auto=format&fit=crop&w=800&q=80" alt="Sustentabilidade e Biogás">
-            </div>
-            <div class="topic-content">
-                <h2>Benefícios Ambientais</h2>
-                <p class="summary">A produção de energia no campo transforma o que antes era considerado descarte em recursos valiosos, diminuindo o impacto ambiental.</p>
-                
-                <div class="extra-info hidden">
-                    <p>A tecnologia dos biodigestores, por exemplo, transforma dejetos de animais e resíduos de colheitas em biogás (gerando eletricidade) e biofertilizantes. Isso reduz a contaminação do solo e da água, gerando autonomia energética para as propriedades rurais.</p>
+                <div class="txt-sobre">
+                    <h2>O que é a <span>Bioenergia</span>?</h2>
+                    <p>A bioenergia é a energia obtida a partir da <strong>biomassa</strong>, ou seja, qualquer matéria orgânica de origem vegetal ou animal que pode ser transformada em energia térmica, elétrica ou combustíveis renováveis.</p>
+                    <p>No cenário do Agroforte brasileiro, resíduos de plantações (como o bagaço da cana-de-açúcar) e óleos vegetais deixam de ser descartados e passam a gerar eletricidade e biocombustíveis que movem o país.</p>
                 </div>
-                
-                <button class="toggle-btn">Saiba mais</button>
             </div>
-        </section>
+        </div>
+    </section>
 
-    </main>
+    <section id="importancia" class="importancia">
+        <div class="interface">
+            <h2 class="titulo-secao">A Importância para o Planeta</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <h3>Redução de Gases</h3>
+                    <p>Substitui combustíveis fósseis poluentes, reduzindo a emissão de CO₂ na atmosfera e combatendo o efeito estufa.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-recycle"></i>
+                    <h3>Economia Circular</h3>
+                    <p>Aproveita 100% dos resíduos agrícolas, transformando o que seria lixo em riqueza e energia limpa.</p>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-seedling"></i>
+                    <h3>Desenvolvimento Rural</h3>
+                    <p>Fortalece o setor agropecuário nacional (Agroforte), gerando milhares de empregos verdes no campo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="utilizacao" class="utilizacao">
+        <div class="interface">
+            <h2 class="titulo-secao">Como Podemos Utilizá-la?</h2>
+            <div class="flex-utilizacao">
+                <div class="item-utilizacao">
+                    <img src="https://images.unsplash.com/photo-1516594798947-e65505dbb29d?auto=format&fit=crop&w=500&q=80" alt="Abastecimento de Biocombustível">
+                    <h3>Biocombustíveis</h3>
+                    <p>O Etanol e o Biodiesel já rodam em nossos carros e caminhões diariamente, poluindo drasticamente menos que a gasolina e o diesel comum.</p>
+                </div>
+                <div class="item-utilizacao">
+                    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&w=500&q=80" alt="Usinas Termelétricas de Biomassa">
+                    <h3>Geração de Eletricidade</h3>
+                    <p>Usinas termoelétricas queimam o bagaço de plantas para gerar vapor, movimentando turbinas de alta tecnologia que acendem lâmpadas em milhares de residências.</p>
+                </div>
+                <div class="item-utilizacao">
+                    <img src="https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?auto=format&fit=crop&w=500&q=80" alt="Produção de Biogás">
+                    <h3>Biogás e Biometano</h3>
+                    <p>A decomposição de resíduos orgânicos animais e esgoto gera gás metano, purificado para uso em fogões e motores industriais pesados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="simulador" class="simulador">
+        <div class="interface">
+            <div class="box-simulador">
+                <h2>Simulador Agroforte Sustentável</h2>
+                <p>Selecione quantos hectares de plantação de biomassa você deseja simular para ver a quantidade estimada de CO₂ evitada por ano!</p>
+                
+                <div class="input-grupo">
+                    <label for="hectares">Hectares de Cultivo:</label>
+                    <input type="number" id="hectares" min="1" max="10000" value="10" placeholder="Ex: 50">
+                    <button id="btn-calcular">Calcular Impacto</button>
+                </div>
+
+                <div id="resultado" class="resultado oculto">
+                    <p><i class="fa-solid fa-tree"></i> Você evitou a emissão de aproximadamente <strong id="valor-co2">0</strong> toneladas de CO₂!</p>
+                    <p>Isso equivale ao plantio de cerca de <strong id="valor-arvores">0</strong> árvores nativas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Agroforte Futuro Sustentável - Todos os direitos reservados.</p>
+        <div class="interface">
+            <p>&copy; 2026 Bioenergia - Agroforte do Futuro. Todos os direitos reservados.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
